@@ -5,10 +5,8 @@ function preview() {
   if (a.length > n && a[10] == " ") {
     document.write(a.substr(0, n) + "...");
   } else if (a[10] !== " ") {
-    while (a[10 + k] != " ") {
-      k++;
-    }
-    document.write(a.substr(0, n + k) + "...");
+    b = a.indexOf(" ");
+    document.write(a.substr(0, b) + "...");
   } else {
     document.write(a);
   }
